@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for RosaeNLG project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:rosaenlg-projects/rosaenlg-boilerplate.git"
+  },
+  "author": "Ludan Stoecklé <ludan.stoeckle@rosaenlg.org> (https://fr.linkedin.com/in/ludanstoeckle)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rosaenlg-projects/boilerplate/issues"
+  },
+  "homepage": "https://gitlab.com/rosaenlg-projects/boilerplate/issues",
+  "dependencies": {
+    "@rosaenlg/rosaenlg": "^0.18.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "mocha": "^6.1.4",
+    "@rosaenlg/gulp-rosaenlg": "^1.3.5",
+    "gulp-mocha": "^6.0.0"
+  }
+}

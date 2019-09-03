@@ -1,0 +1,19 @@
+
+stages:
+  - build
+
+build:
+  stage: build
+  image: node
+  cache:
+    paths:
+      - node_modules/
+    untracked: true
+  script:
+    - npm config set //registry.npmjs.org/:_authToken 17d3876a-d0df-4310-bafe-01bf82549f87
+    - npm config set always-auth=true
+    - npm config set email=ludan.stoeckle@rosaenlg.org
+    - npm config list
+    - npm whoami
+    - npm install
+    - npm run test
