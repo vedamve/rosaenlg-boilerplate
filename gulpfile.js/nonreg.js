@@ -1,6 +1,6 @@
 const fs = require('fs');
 const init = require('../src/init');
-const rosaenlgPug = require('@rosaenlg/rosaenlg');
+const rosaenlgPug = require('rosaenlg');
 
 function nonreg(cb) {
   let phones = init.getDataPhones();

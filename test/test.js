@@ -1,6 +1,6 @@
 var assert = require('assert');
 const fs = require('fs');
-const rosaenlgPug = require('@rosaenlg/rosaenlg');
+const rosaenlgPug = require('rosaenlg');
 const init = require('../src/init');
 
 
