@@ -4,7 +4,7 @@
   "description": "boilerplate for RosaeNLG project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "mocha": "^6.2.2",
     "gulp-rosaenlg": "latest",
     "gulp-mocha": "^7.0.2",
+    "mochawesome": "^4.1.0",
     "rosaenlg-cli": "latest"
   }
 }
