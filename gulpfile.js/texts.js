@@ -1,9 +1,8 @@
 const fs = require('fs');
-const init = require('../src/init');
 const rosaenlgPug = require('rosaenlg');
 
 function html(cb) {
-  let phones = init.getDataPhones();
+  const phones = JSON.parse(fs.readFileSync('data/data.json', 'utf8'));
   fs.open('dist/allPhones.html', 'w', (err, fd) => {
     fs.appendFileSync(fd, '<!DOCTYPE html><html lang="fr"><head><title>Phones Descriptions</title><meta charset="utf-8"/></head><body>');
     for(let i=0; i< phones.length; i++) {

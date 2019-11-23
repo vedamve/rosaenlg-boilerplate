@@ -1,13 +1,11 @@
 var assert = require('assert');
 const fs = require('fs');
 const rosaenlgPug = require('rosaenlg');
-const init = require('../src/init');
-
 
 describe('phones', function() {
   
   let referenceData = JSON.parse(fs.readFileSync('test/phonesNonreg.json', 'utf8'));
-  let phones = init.getDataPhones();
+  const phones = JSON.parse(fs.readFileSync('data/data.json', 'utf8'));
   assert(referenceData.length = phones.length);
 
   for(let i=0; i< phones.length; i++) {

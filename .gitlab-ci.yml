@@ -12,3 +12,10 @@ build:
   script:
     - npm install
     - npm run test
+    - npm install --global gulp-cli
+    - gulp init
+    - gulp texts
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 day

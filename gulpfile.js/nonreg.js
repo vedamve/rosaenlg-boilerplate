@@ -1,9 +1,8 @@
 const fs = require('fs');
-const init = require('../src/init');
 const rosaenlgPug = require('rosaenlg');
 
 function nonreg(cb) {
-  let phones = init.getDataPhones();
+  const phones = JSON.parse(fs.readFileSync('data/data.json', 'utf8'));
   fs.open('test/phonesNonreg.json', 'w', (err, fd) => {
     fs.appendFileSync(fd, '[');
     for(let i=0; i< phones.length; i++) {

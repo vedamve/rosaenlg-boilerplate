@@ -1,0 +1,16 @@
+//- for command line testing
+
+include includes
+
+-
+  let phone = {
+    "name": "OnePlus 5T",
+    "colors": [ "Black",  "Red", "White" ],
+    "displaySize": 6,
+    "screenRatio": 80.43,
+    "battery": 3300,
+    "bluetooth": 5
+  }
+
+p 
+  | #[+phone(phone)]
