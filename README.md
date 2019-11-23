@@ -17,3 +17,5 @@ Gulp/CI:
   - `mocha` to run the tests
   - use `npm run test` or `gulp test` to run the tests _and_ generate a nice report in `mochawesome-report` folder
   - `gulp nonreg` to generate the non regression reference test file
+- optional: use `gulp package` to package your templates for usage in a RosaeNLG server
+

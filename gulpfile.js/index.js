@@ -3,6 +3,7 @@ const fs = require('fs');
 const texts = require('./texts');
 const nonreg = require('./nonreg');
 const test = require('./test');
+const package = require('./package');
 
 function init(cb) {
   const folders = [
@@ -29,3 +30,4 @@ exports.clean = clean;
 exports.nonreg = nonreg.all;
 exports.texts = texts.all;
 exports.test = test.all;
+exports.package = package.all;
