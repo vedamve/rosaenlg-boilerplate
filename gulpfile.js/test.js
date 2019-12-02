@@ -1,19 +1,29 @@
-const { src, series } = require('gulp');
+const { src, dest, parallel, series } = require('gulp');
 const fs = require('fs');
 const mocha = require('gulp-mocha');
 
-function test() {
-  return src('test/test.js', {read: false})
-		// `gulp-mocha` needs filepaths so you can't have any plugins before it
-		.pipe(mocha({
-      inlineDiffs: true,
-      reporter: 'mochawesome'
-    }))
+function handleError(err) {
+  console.log(err.toString());
+  this.emit('end');
 }
 
-function hackcss(cb) {
+function test(cb, testFile, reportDir) {
+  return src(testFile, { read: false })
+    // `gulp-mocha` needs filepaths so you can't have any plugins before it
+    .pipe(mocha({
+      inlineDiffs: true,
+      reporter: 'mochawesome',
+      reporterOptions: {
+        code: false,
+        reportDir: reportDir
+      }
+    }))
+    .on('error', handleError);
+}
+
+function hackcss(cb, reportDir) {
   // hack result css
-  const cssPath = 'mochawesome-report/assets/app.css';
+  const cssPath = `${reportDir}/assets/app.css`;
   let css = fs.readFileSync(cssPath, 'utf8');
   css = css.replace('pre{', 'pre{white-space: pre-wrap;');
   fs.writeFileSync(cssPath, css, 'utf8');
@@ -21,4 +31,4 @@ function hackcss(cb) {
   cb();
 }
 
-exports.all = series(test, hackcss);
+exports.all = series(cb => test(cb, 'test/test.js', 'mochawesome-report'), cb => hackcss(cb, 'mochawesome-report'));
