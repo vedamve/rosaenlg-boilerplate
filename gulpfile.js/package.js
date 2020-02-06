@@ -1,9 +1,6 @@
 const gulpRosaeNLG = require('gulp-rosaenlg');
 const fs = require('fs');
 
-const tmpFile = 'tmp.js';
-
-
 function doPackage(cb) {
 
   const packageObj = gulpRosaeNLG.packageTemplateJson({
@@ -22,16 +19,16 @@ function doPackage(cb) {
           "colors": ["Black", "Red", "White"],
           "displaySize": 6,
           "screenRatio": 80.43,
-          "battery": 3300,
-          "bluetooth": 5
+          "battery": 3300
         }
       },
       expected: ['phone', 'battery']
     }
   });
 
-  fs.writeFileSync('dist/phone_package.json', JSON.stringify(packageObj), 'utf8');
-  cb();
+  fs.writeFile('dist/phone_package.json', JSON.stringify(packageObj), 'utf8', () => {
+    cb();
+  });
 }
 
 exports.all = doPackage;

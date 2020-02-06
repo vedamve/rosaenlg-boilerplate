@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git@gitlab.com:rosaenlg-projects/rosaenlg-boilerplate.git"
   },
-  "author": "Ludan Stoecklé <ludan.stoeckle@rosaenlg.org> (https://fr.linkedin.com/in/ludanstoeckle)",
-  "license": "ISC",
+  "author": "Ludan Stoecklé <ludan.stoeckle@rosaenlg.org>",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/rosaenlg-projects/boilerplate/issues"
   },
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "mocha": "^6.2.2",
+    "mocha": "^7.0.1",
     "gulp-rosaenlg": "latest",
     "gulp-mocha": "^7.0.2",
     "mochawesome": "^4.1.0",
