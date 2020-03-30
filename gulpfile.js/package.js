@@ -5,8 +5,7 @@ function doPackage(cb) {
 
   const packageObj = gulpRosaeNLG.packageTemplateJson({
     templateId: 'phones',
-    entryTemplate: 'phoneForJson.pug',
-    folderWithTemplates: 'templates',
+    entryTemplate: 'templates/phoneForJson.pug',
     compileInfo: {
       language: 'fr_FR'
     },
