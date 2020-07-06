@@ -9,12 +9,12 @@ function doPackage(cb) {
     src: {
       entryTemplate: 'templates/phoneForJson.pug',
       compileInfo: {
-        language: 'fr_FR'
+        language: 'en_US'
       },
       autotest: {
         activate: true,
         input: {
-          language: 'fr_FR',
+          language: 'en_US',
           phone: {
             "name": "OnePlus 5T",
             "colors": ["Black", "Red", "White"],

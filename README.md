@@ -9,7 +9,7 @@ Just fork it and start your NLG project.
 For real time debug and rendering:
 
 - open a terminal in VSCode
-- use `npx rosaenlg-cli -l fr_FR -w templates\phoneCli.pug`
+- use `npx rosaenlg-cli -l en_US -w templates\phoneCli.pug`
 
 
 Gulp/CI:
