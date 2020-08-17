@@ -19,15 +19,15 @@
   },
   "homepage": "https://gitlab.com/rosaenlg-projects/boilerplate/issues",
   "dependencies": {
-    "rosaenlg": "^1.16.3"
+    "rosaenlg": "^1.16.10"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-mocha": "^7.0.2",
     "mocha": "^7.2.0",
     "mochawesome": "^5.0.0",
-    "rosaenlg-cli": "^1.16.3",
-    "rosaenlg-packager": "^0.3.3",
+    "rosaenlg-cli": "^1.16.10",
+    "rosaenlg-packager": "^0.3.10",
     "rimraf": "^3.0.2"
   }
 }
