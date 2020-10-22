@@ -24,7 +24,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-mocha": "^7.0.2",
-    "mocha": "^7.2.0",
+    "mocha": "^8.2.0",
     "mochawesome": "^5.0.0",
     "rosaenlg-cli": "^1.17.1",
     "rosaenlg-packager": "^0.3.10",
