@@ -13,20 +13,20 @@
     "url": "git@gitlab.com:rosaenlg-projects/rosaenlg-boilerplate.git"
   },
   "author": "Ludan Stoecklé <ludan.stoeckle@rosaenlg.org>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://gitlab.com/rosaenlg-projects/boilerplate/issues"
   },
   "homepage": "https://gitlab.com/rosaenlg-projects/boilerplate/issues",
   "dependencies": {
-    "rosaenlg": "^1.17.1"
+    "rosaenlg": "^1.18.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-mocha": "^7.0.2",
     "mocha": "^8.2.0",
     "mochawesome": "^5.0.0",
-    "rosaenlg-cli": "^1.17.1",
+    "rosaenlg-cli": "^1.18.0",
     "rosaenlg-packager": "^0.3.10",
     "rimraf": "^3.0.2"
   }
